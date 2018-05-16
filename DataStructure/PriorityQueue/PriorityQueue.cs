@@ -13,7 +13,6 @@ namespace PriorityQueue {
                 return this.list.Count;
             }
         }
-
        
         public PriorityQueue () {
             this.list = new SortedSet<T> ();
@@ -31,11 +30,9 @@ namespace PriorityQueue {
             return this.list.Min;
         }
 
-
-
         public void RemoveMin () {
             T item = this.list.Min;
-            this.list.Remove (item);
+            this.list.Remove(item);
         }
     }
 }
